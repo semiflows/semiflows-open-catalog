@@ -1,0 +1,133 @@
+{
+  "title": "SemiFlows Open Semiconductor Process Catalog (40nm-7nm)",
+  "id": "semiflows/semiflows-open-semiconductor-process-catalog",
+  "subtitle": "395 bilingual CMOS process articles, 21 concepts & 40nm-7nm comparisons",
+  "description": "Bilingual (English and Chinese) semiconductor fabrication catalog by SemiFlows covering 40nm BSI CIS, 28nm Planar HKMG, 14nm FinFET, and 7nm FinFET: 395 process engineering article summaries, 21 foundational FEOL/MOL/BEOL/Lithography concepts, and 3 adjacent generation comparisons (40nm-vs-28nm, 28nm-vs-14nm, 14nm-vs-7nm). Licensed under CC BY 4.0.",
+  "isPrivate": false,
+  "licenses": [
+    {
+      "name": "CC-BY-4.0"
+    }
+  ],
+  "keywords": [
+    "semiconductor",
+    "cmos",
+    "finfet",
+    "hkmg",
+    "wafer fabrication",
+    "bilingual",
+    "engineering"
+  ],
+  "resources": [
+    {
+      "path": "semiflows-public-catalog.json",
+      "description": "Structured JSON catalog containing 4 node overviews (40nm-7nm), 21 foundational concepts, 3 adjacent generation comparisons, and 395 bilingual article summaries."
+    },
+    {
+      "path": "semiflows-articles.csv",
+      "description": "Flat CSV index of 395 bilingual semiconductor process engineering articles.",
+      "schema": {
+        "fields": [
+          {
+            "name": "slug",
+            "description": "Canonical article URL slug",
+            "type": "string"
+          },
+          {
+            "name": "category",
+            "description": "Process domain category",
+            "type": "string"
+          },
+          {
+            "name": "primary_keyword",
+            "description": "Primary technical keyword",
+            "type": "string"
+          },
+          {
+            "name": "title_en",
+            "description": "English article title",
+            "type": "string"
+          },
+          {
+            "name": "title_zh",
+            "description": "Chinese article title",
+            "type": "string"
+          },
+          {
+            "name": "excerpt_en",
+            "description": "English article summary",
+            "type": "string"
+          },
+          {
+            "name": "excerpt_zh",
+            "description": "Chinese article summary",
+            "type": "string"
+          },
+          {
+            "name": "url_en",
+            "description": "Canonical English SemiFlows article URL",
+            "type": "string"
+          },
+          {
+            "name": "url_zh",
+            "description": "Canonical Chinese SemiFlows article URL",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "path": "semiflows-comparisons.csv",
+      "description": "Adjacent generation comparison metrics for 40nm-vs-28nm, 28nm-vs-14nm, and 14nm-vs-7nm.",
+      "schema": {
+        "fields": [
+          {
+            "name": "comparison_slug",
+            "description": "Adjacent comparison identifier",
+            "type": "string"
+          },
+          {
+            "name": "source_node",
+            "description": "Baseline technology node",
+            "type": "string"
+          },
+          {
+            "name": "target_node",
+            "description": "Scaled technology node",
+            "type": "string"
+          },
+          {
+            "name": "metric_en",
+            "description": "English metric name",
+            "type": "string"
+          },
+          {
+            "name": "metric_zh",
+            "description": "Chinese metric name",
+            "type": "string"
+          },
+          {
+            "name": "source_value_en",
+            "description": "Baseline node value",
+            "type": "string"
+          },
+          {
+            "name": "target_value_en",
+            "description": "Target node value",
+            "type": "string"
+          },
+          {
+            "name": "engineering_significance_en",
+            "description": "Physical scaling significance",
+            "type": "string"
+          },
+          {
+            "name": "reference_url",
+            "description": "Canonical SemiFlows comparison URL",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

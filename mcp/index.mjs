@@ -97,7 +97,7 @@ function callTool(name, args = {}) {
         const bodyHay = `${a.excerptEn} ${a.excerptZh} ${a.category}`.toLowerCase();
         let score = 0;
         for (const t of tokens) {
-          if (titleHaY.includes(t)) score += 3;
+          if (titleHay.includes(t)) score += 3;
           else if (bodyHay.includes(t)) score += 1;
         }
         return { a, score };

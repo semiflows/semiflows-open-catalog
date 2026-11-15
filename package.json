@@ -1,0 +1,44 @@
+{
+  "name": "@semiflows/open-catalog-mcp",
+  "mcpName": "io.github.semiflows/open-catalog-mcp",
+  "version": "1.0.0",
+  "description": "Public semiconductor process engineering catalog (395+ bilingual technical articles, 40nm–7nm node comparisons, foundational concepts) and read-only MCP server by SemiFlows.",
+  "license": "(MIT AND CC-BY-4.0)",
+  "type": "module",
+  "bin": {
+    "semiflows-open-catalog-mcp": "./mcp/index.mjs"
+  },
+  "files": [
+    "mcp/",
+    "dataset/",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semiflows/semiflows-open-catalog.git"
+  },
+  "homepage": "https://semiflows.com",
+  "bugs": {
+    "url": "https://github.com/semiflows/semiflows-open-catalog/issues",
+    "email": "support@semiflows.com"
+  },
+  "author": "SemiFlows <support@semiflows.com> (https://semiflows.com)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "semiconductor",
+    "cmos",
+    "finfet",
+    "hkmg",
+    "wafer-fabrication",
+    "process-flow",
+    "mcp",
+    "model-context-protocol"
+  ]
+}

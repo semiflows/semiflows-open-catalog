@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.semiflows/open-catalog-mcp",
+  "title": "SemiFlows Open Process Catalog",
+  "description": "Bilingual semiconductor process catalog (40nm–7nm, 395+ articles) & read-only MCP server.",
+  "repository": {
+    "url": "https://github.com/semiflows/semiflows-open-catalog",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@semiflows/open-catalog-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
